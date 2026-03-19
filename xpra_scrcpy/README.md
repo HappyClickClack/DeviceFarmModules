@@ -26,7 +26,7 @@ docker run -d --add-host=host.docker.internal:host-gateway \
 -p 18080:8080 \
 xpra_scrcpy_image
 ```
-- спустя пару минут (время необходимое для старта серсвиса) проверьте доступ http://localhost:18080, http://localhost:18081, http://localhost:18082. Пароль `123`, указан в скрипте.
+- спустя пару минут (время необходимое для старта серсвиса) проверьте доступ http://localhost:18080, http://localhost:18081, http://localhost:18082. Пароль для webconnuser - `123`, указан в скрипте start.sh.
 
 _Для корректной работы с устройствами необходимо запустить ADB сервер на хосте `adb -a nodaemon server start &> /dev/null &` и указать DEVICE_SERIAL в скрипте._
   
