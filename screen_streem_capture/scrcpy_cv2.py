@@ -1,6 +1,6 @@
 import cv2
 
-DEVICE_HOST_IP = '10.54.198.107'
+DEVICE_HOST_IP = '172.17.0.1'
 device_stream_port = 1234
 video_path = f"tcp://{DEVICE_HOST_IP}:{device_stream_port}"
 cap = cv2.VideoCapture(video_path)
