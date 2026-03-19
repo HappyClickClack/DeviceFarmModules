@@ -1,7 +1,8 @@
 Трансляция экран и перехват потока в Python коде
 <img width="790" height="750" alt="image" src="https://github.com/user-attachments/assets/38471a6a-62df-4472-bd9f-33720db976df" />
 
-
+[Инструкция от scrcpy](https://github.com/Genymobile/scrcpy/blob/master/doc/develop.md#standalone-server)
+ 
 - запустим контейнер с пробросом ADB
 ```
 docker run -d --add-host=host.docker.internal:host-gateway \
