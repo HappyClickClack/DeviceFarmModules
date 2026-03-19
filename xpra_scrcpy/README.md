@@ -7,6 +7,7 @@
 # Установка окружения и запуск:
 <details>
   <summary>Инструкция</summary>
+  
 - Клонируйте репозиторий:
 ```
 git clone https://github.com/HappyClickClack/DeviceFarmModules
@@ -16,11 +17,18 @@ git clone https://github.com/HappyClickClack/DeviceFarmModules
 cd xpra_scrcpy
 docker build -t xpra_scrcpy_image .
 ```
-- запустите контейнер:
+- запустите контейнер с пробросом ADB сервера:
 ```
-docker run -v $(pwd)/script:/mounted-scripts -d -p 18080:8080 --name=android-web-interface xpra_scrcpy_image
+docker run -d --add-host=host.docker.internal:host-gateway \
+-e "ANDROID_ADB_SERVER_ADDRESS=host.docker.internal" \
+--name=android-web-interface \
+-v $(pwd)/script:/mounted-scripts \
+-p 18080:8080 \
+xpra_scrcpy_image
 ```
-- спустя пару минут (время необходимое для старта серсвиса) проверьте доступ http://localhost:18080:
+- спустя пару минут (время необходимое для старта серсвиса) проверьте доступ http://localhost:18080, http://localhost:18081, http://localhost:18082. Пароль `123`, указан в скрипте.
+
+_Для корректной работы с устройствами необходимо запустить ADB сервер на хосте `adb -a nodaemon server start &> /dev/null &` и указать DEVICE_SERIAL в скрипте._
   
 </details>
 
