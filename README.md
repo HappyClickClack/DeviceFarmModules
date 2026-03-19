@@ -8,8 +8,8 @@
 Программное обеспечение с открытым исходным кодом, предназначенное для удаленного запуска графических приложений (X11) и рабочих столов.
 Подробнее [тут](https://github.com/Xpra-org/xpra/).
 
-## Комбинация scrcpy и Xpra для удаленного web доступа и управления Android устройствами
-Запуск scrcpy в Xpra.
+## Web доступ для управления Android устройствами
+Комбинация scrcpy и Xpra или запуск scrcpy в Xpra.
 Подробнее [тут](https://github.com/HappyClickClack/DeviceFarmModules/blob/main/xpra_scrcpy/README.md).
 
 ## Управление питанием устройств
