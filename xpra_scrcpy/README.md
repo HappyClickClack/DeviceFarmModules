@@ -1,6 +1,7 @@
 # Web интерфейс для устройств
 
-Для организации web интерфейса для устройств фермы можно использовать комбинацию Xpra и scrcpy.
+Для организации web интерфейса для устройств фермы можно использовать комбинацию [Xpra](https://github.com/Xpra-org/xpra/) и [scrcpy](https://github.com/genymobile/scrcpy).
+
 <img width="866" height="609" alt="image" src="https://github.com/user-attachments/assets/fb67067e-6c29-4f94-a479-d8e88029c8bc" />
 
 
