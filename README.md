@@ -10,8 +10,8 @@
 
 ## Web интерфейс (scrcpy + Xpra)
 Запуск scrcpy в Xpra.
-Подробнее [тут](https://github.com/HappyClickClack/DeviceFarmModules/blob/main/xpra_scrcpy/README.md)
+Подробнее [тут](https://github.com/HappyClickClack/DeviceFarmModules/blob/main/xpra_scrcpy/README.md).
 
 ## Управление питанием устройств
-Описание ....
-Подробнее тут
+Использование USB хабов с поддержкой PPPS для программного отключения портов с устройствами.
+Подробнее [тут](https://github.com/HappyClickClack/DeviceFarmModules/blob/main/USB_power_control/README.md).
