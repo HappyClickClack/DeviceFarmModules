@@ -24,7 +24,7 @@ docker run -d --add-host=host.docker.internal:host-gateway \
 -e "ANDROID_ADB_SERVER_ADDRESS=host.docker.internal" \
 --name=android-web-interface \
 -v $(pwd)/script:/mounted-scripts \
--p 18080:8080 \
+-p 18080-18085:8080-8085 \
 xpra_scrcpy_image
 ```
 - спустя пару минут (_время необходимое для старта сервиса_) проверьте доступ http://localhost:18080, http://localhost:18081, http://localhost:18082. Пароль для webconnuser - `123`, указан в скрипте start.sh.
