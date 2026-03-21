@@ -14,6 +14,8 @@
 Подробнее об этой схеме и примеры реализации см здесь (TODO).
 
 ## Web интерфейс для работы с устройствами
+<img width="861" height="608" alt="image" src="https://github.com/user-attachments/assets/31223ca6-af90-49fb-9cd0-29575da06bcb" />
+
 При необходимости наблюдения за экраном устройства и/или для интерактивного взаимодействия с Android устройством существует очень удобная утилита scrcpy ("**scr**een **c**o**py**").
 Эта утилита, предназначенная для зеркалирования экрана Android-устройств на ПК (Windows, macOS, Linux) и управления ими с помощью мыши и клавиатуры. Подробнее про scrcpy см [тут](https://github.com/genymobile/scrcpy).
 
@@ -24,9 +26,13 @@
 Подробнее про запуск Xpra + scrcpy см [тут](https://github.com/HappyClickClack/DeviceFarmModules/blob/main/xpra_scrcpy/README.md).
 
 ## Трансляция экрана Android устройств, работа с фреймами в Python
+<img width="638" height="602" alt="image" src="https://github.com/user-attachments/assets/3383ce3e-b358-4d73-91ab-a435093359a1" />
+
 Если возникает необходимость транслировать экран устройтсва как каких-либо задач видеоналитики, то опять же можно использовать утилиту scrcpy, описанную выше, в режиме автономного сервера/standalone server. Подробнее об этом режиме работы см [здесь](https://github.com/Genymobile/scrcpy/blob/master/doc/develop.md#standalone-server).
 Примеры настройки и спользования см [тут](https://github.com/HappyClickClack/DeviceFarmModules/blob/main/screen_streem_capture/README.md).
 
 ## Управление питанием устройств
+<img width="392" height="388" alt="image" src="https://github.com/user-attachments/assets/f09ca587-8372-403f-aa10-ad9b77f06184" />
+
 Еще одна распространненная задача при работе с устройствами - это возможность отключения устройтсва от внешнего питания, т.е. от USB порта. Для решения этой задачи можно использовать USB хабы с поддержкой Per Port Power Switching (PPPS) и утилиту uhubctl. Подробнее об этой утилите и список совместимых USB хабов см [здесь](https://github.com/mvp/uhubctl).
 Примеры управления питанием и др детали см [тут](https://github.com/HappyClickClack/DeviceFarmModules/blob/main/USB_power_control/README.md).
