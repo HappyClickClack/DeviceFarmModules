@@ -19,8 +19,9 @@ adb -s <DEVICE_SERIAL> push scrcpy-server-v3.3.4 /data/local/tmp/scrcpy-server-m
 adb -s <DEVICE_SERIAL> forward tcp:1234 localabstract:scrcpy
 adb -s <DEVICE_SERIAL> shell CLASSPATH=/data/local/tmp/scrcpy-server-manual.jar app_process / com.genymobile.scrcpy.Server 3.3.4 tunnel_forward=true audio=false control=false cleanup=false raw_stream=true max_size=1920
 ```
-после этого начнется трансляция экрана на хосте на порту `1234`
+после этого на хосте на порту `1234` будет подготовлен сокет для трансляции экрана. Трансляция начнется после подключения к сокету и при наличии каких-либо изменений на экране, для тестов можно запустить секундомер на экране телефона чтобы иметь надежный источник изменений.
 
 Для подключения к порту и записи экрана можно использовать ffmpeg `ffmpeg -i tcp://<HOST_IP>:1234 -f h264 -c:v copy ./test.mp4`
 или воспользоваться скриптом scrcpy_cv2.py
 
+При отключении от порта трансляция автоматически завершается и для повторного подключения нужно занво запускать scrcpy-server на устройстве.
