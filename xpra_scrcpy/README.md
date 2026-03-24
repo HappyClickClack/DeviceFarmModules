@@ -29,7 +29,7 @@ xpra_scrcpy_image
 ```
 - спустя пару минут (_время необходимое для старта сервиса_) проверьте доступ http://localhost:18080, http://localhost:18081, http://localhost:18082. Пароль для webconnuser - `123`, указан в скрипте start.sh.
 
-_Для корректной работы с устройствами необходимо запустить ADB сервер на хосте `adb -a nodaemon server start &> /dev/null &` и указать DEVICE_SERIAL в скрипте._
+_Для корректной работы с устройствами необходимо запустить ADB сервер на хосте `adb -a start-server` (подробнее см [здесь](https://github.com/HappyClickClack/DeviceFarmModules/blob/main/ADB_server_forwarding/README.md)) и указать [DEVICE_SERIAL в скрипте](https://github.com/HappyClickClack/DeviceFarmModules/blob/main/xpra_scrcpy/script/start.sh#L15)._
   
 </details>
 
@@ -42,4 +42,4 @@ _Для корректной работы с устройствами необх
 
 # Если возникли сложности:
 - проверьте логи контейнера
-- проверьте, что устройства доступны в контейнере `adb devices`
+- проверьте, что устройства доступны в контейнере, для этого выполните в контейнере `adb devices -l`
