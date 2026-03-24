@@ -3,7 +3,7 @@
 
 [Инструкция от scrcpy](https://github.com/Genymobile/scrcpy/blob/master/doc/develop.md#standalone-server)
  
-- запустим контейнер с [пробросом ADB](https://github.com/HappyClickClack/DeviceFarmModules/blob/main/ADB_server_forwarding/README.md)
+- запустим контейнер с [пробросом ADB](https://github.com/HappyClickClack/DeviceFarmModules/blob/main/ADB_server_forwarding/README.md) на базе образа, например, [xpra_scrcpy](https://github.com/HappyClickClack/DeviceFarmModules/blob/main/xpra_scrcpy/README.md).
 ```
 docker run -d --add-host=host.docker.internal:host-gateway \
 -e "ANDROID_ADB_SERVER_ADDRESS=host.docker.internal" \
