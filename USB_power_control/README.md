@@ -6,7 +6,7 @@
 * j5create JCH377 ([где купить](https://ru.microless.com/product/j5create-usb-type-c-3-0-7-port-hub-jch377/))
 * RSH-ST10C-6 ([где купить](https://aliexpress.ru/item/1005008160865046.html))
 
-Управление портами осуществляется утилитой uhubtcl, вот результат `help` команды:
+Управление портами осуществляется утилитой uhubtcl:
 ```
 $ uhubctl -h
 uhubctl: utility to control USB port power for smart hubs.
@@ -47,7 +47,7 @@ Current status for hub 1-8 [05e3:0608 USB2.0 Hub, USB 2.10, 4 ports]
   Port 4: 0100 power
 ```
 , _здесь видно, что хаб `1-8` поддерживает управление на 4х портах, на двух из которых подключены устройства OPPO и Samsung_.
-На устройстве Samsung идет зарядка:<br> <img width="394" height="187" alt="image" src="https://github.com/user-attachments/assets/271c5cde-d0a6-4cac-8822-df34b4cf43d7" />
+На устройстве Samsung идет зарядка (скрин с экрана телефона):<br> <img width="394" height="187" alt="image" src="https://github.com/user-attachments/assets/271c5cde-d0a6-4cac-8822-df34b4cf43d7" />
 
 
 2. Отключим порт Samsung:
@@ -59,7 +59,7 @@ Sent power off request
 New status for hub 1-8 [05e3:0608 USB2.0 Hub, USB 2.10, 4 ports]
   Port 3: 0000 off
 ```
-, _здесь укажем номер хаба `-l 1-8`, команду `-a off` и номер порта `-p 3`.
+, _здесь укажем номер хаба `-l 1-8`, команду `-a off` и номер порта `-p 3`_.
 Устройство Samsung переключается на батарею:<br> <img width="397" height="186" alt="image" src="https://github.com/user-attachments/assets/a69e2b0f-ffd1-4953-bf2c-7dcfa982dcdf" />
 
 3. Включим обратно:
@@ -71,6 +71,7 @@ Sent power on request
 New status for hub 1-8 [05e3:0608 USB2.0 Hub, USB 2.10, 4 ports]
   Port 3: 0100 power
 ```
-, _здесь укажем обратную команду `-a on`.
+, _здесь укажем обратную команду `-a on`_.
 Зарядка вернулась, устройство показывает уровень заряда 100%:<br> <img width="398" height="493" alt="image" src="https://github.com/user-attachments/assets/8cbe0d40-86cf-4cdc-8435-23a8035bf6b3" />
 
+При отключении порта USB связь с устройством пропадает и ADB отладка по проводу не возможна. Для контроля над устройством при отключеннмо USB порте можно использовать WiFi подключение (`adb connect IP:PORT`). 
