@@ -9,6 +9,14 @@
 * [D-Link: DUB-H4](https://ftp.dlink.ru/pub/usb/DUB-H4/Data_sh/DS_DUB-H4_D_RUS_01.pdf)
 * Orient BC-315
 
+<details>
+  <summary>Фоточка хабов</summary>
+  
+  <img width="1935" height="1865" alt="Unsaved Image 3" src="https://github.com/user-attachments/assets/a343125c-be4e-4577-bc88-2dbc1100b456" />
+  
+</details>
+
+
 Управление портами осуществляется утилитой uhubtcl:
 ```
 $ uhubctl -h
