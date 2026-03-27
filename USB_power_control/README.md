@@ -3,8 +3,11 @@
 Для дистанционного отключения устройств от USB питания можно использовать  USB хабы, [совместимые с утилитой uhubctl](https://github.com/mvp/uhubctl#compatible-usb-hubs). Желательно выбирать хабы с внешним питанием для более быстрой зарядки подключенных устройств.
 
 Для своих задач мы используем вот такие хабы:
-* j5create JCH377 ([где купить](https://ru.microless.com/product/j5create-usb-type-c-3-0-7-port-hub-jch377/))
+* [j5create JCH377](https://info.j5create.com/products/jch377) ([где купить](https://ru.microless.com/product/j5create-usb-type-c-3-0-7-port-hub-jch377/))
 * RSH-ST10C-6 ([где купить](https://aliexpress.ru/item/1005008160865046.html))
+* [j5create JUH377](https://info.j5create.com/products/juh377)
+* [D-Link: DUB-H4](https://ftp.dlink.ru/pub/usb/DUB-H4/Data_sh/DS_DUB-H4_D_RUS_01.pdf)
+* Orient BC-315
 
 Управление портами осуществляется утилитой uhubtcl:
 ```
