@@ -37,7 +37,7 @@
 <img width="638" height="602" alt="image" src="https://github.com/user-attachments/assets/3383ce3e-b358-4d73-91ab-a435093359a1" />
 
 Если возникает необходимость транслировать экран устройства как каких-либо задач видеоналитики, то опять же можно использовать утилиту [scrcpy](https://github.com/genymobile/scrcpy) в режиме [автономного сервера/standalone server](https://github.com/Genymobile/scrcpy/blob/master/doc/develop.md#standalone-server).
-Примеры настройки и использования см [здесь](https://github.com/HappyClickClack/DeviceFarmModules/blob/main/screen_streem_capture/README.md).
+Примеры настройки и использования см [здесь](https://github.com/HappyClickClack/DeviceFarmModules/blob/main/screen_stream_capture/README.md).
 
 ## Управление питанием устройств
 <img width="392" height="388" alt="image" src="https://github.com/user-attachments/assets/f09ca587-8372-403f-aa10-ad9b77f06184" />
