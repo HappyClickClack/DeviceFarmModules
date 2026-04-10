@@ -22,6 +22,6 @@ adb -s <DEVICE_SERIAL> shell CLASSPATH=/data/local/tmp/scrcpy-server-manual.jar 
 после этого на хосте на порту `1234` будет подготовлен сокет для трансляции экрана. Трансляция начнется после подключения к сокету и при наличии каких-либо изменений на экране, для тестов можно запустить секундомер на экране телефона чтобы иметь надежный источник изменений.
 
 Для подключения к порту и записи экрана можно использовать ffmpeg `ffmpeg -i tcp://<HOST_IP>:1234 -f h264 -c:v copy ./test.mp4`
-или воспользоваться скриптом [scrcpy_cv2.py](https://github.com/HappyClickClack/DeviceFarmModules/blob/main/screen_streem_capture/scrcpy_cv2.py).
+или воспользоваться скриптом [scrcpy_cv2.py](https://github.com/HappyClickClack/DeviceFarmModules/blob/main/screen_stream_capture/scrcpy_cv2.py).
 
 При отключении от порта трансляция автоматически завершается и для повторного подключения нужно занво запускать scrcpy-server на устройстве.
