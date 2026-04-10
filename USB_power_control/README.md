@@ -1,6 +1,6 @@
 <img width="392" height="388" alt="image" src="https://github.com/user-attachments/assets/f09ca587-8372-403f-aa10-ad9b77f06184" />
 
-Для дистанционного отключения устройств от USB питания можно использовать  USB хабы, [совместимые с утилитой uhubctl](https://github.com/mvp/uhubctl#compatible-usb-hubs). Желательно выбирать хабы с внешним питанием для более быстрой зарядки подключенных устройств.
+Для дистанционного отключения устройств от USB питания можно использовать  существующие USB хабы, [совместимые с утилитой uhubctl](https://github.com/mvp/uhubctl#compatible-usb-hubs). Желательно выбирать хабы с внешним питанием чтобы подключенные устройства энергетически не голодали.
 
 Для своих задач мы используем вот такие хабы:
 * [j5create JCH377](https://info.j5create.com/products/jch377) ([где купить](https://ru.microless.com/product/j5create-usb-type-c-3-0-7-port-hub-jch377/))
@@ -17,7 +17,7 @@
 </details>
 
 
-Управление портами осуществляется утилитой uhubtcl:
+Управление портами осуществляется утилитой [uhubtcl](https://github.com/mvp/uhubctl):
 ```
 $ uhubctl -h
 uhubctl: utility to control USB port power for smart hubs.
@@ -85,4 +85,4 @@ New status for hub 1-8 [05e3:0608 USB2.0 Hub, USB 2.10, 4 ports]
 , _здесь укажем обратную команду `-a on`_.
 Зарядка вернулась, устройство показывает уровень заряда 100%:<br> <img width="398" height="493" alt="image" src="https://github.com/user-attachments/assets/8cbe0d40-86cf-4cdc-8435-23a8035bf6b3" />
 
-При отключении порта USB связь с устройством пропадает и ADB отладка по проводу не возможна. Для контроля над устройством при отключеннмо USB порте можно использовать WiFi подключение (`adb connect IP:PORT`). 
+**NB**: При отключении USB порта связь с устройством, подключенным по проводу, пропадает и дальнейшая USB-ADB отладка по проводу не возможна. Для контроля над устройством при отключенном USB порте можно использовать [WiFi отладку](https://developer.android.com/tools/adb#connect-to-a-device-over-wi-fi). 
