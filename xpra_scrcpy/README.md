@@ -37,7 +37,7 @@ docker run -d --add-host=host.docker.internal:host-gateway \
 -p 18080-18085:8080-8085 \
 xpra_scrcpy_image
 ```
-- спустя пару минут (_время необходимое для старта сервиса_) проверьте доступ http://localhost:18080, http://localhost:18081, http://localhost:18082. Пароль для нового пользователя webconnuser - `123`, указан в скрипте start.sh, пользователь создается в dockerfile.
+- спустя пару минут (_время необходимое для старта сервиса_) проверьте доступ http://localhost:18080, http://localhost:18081, http://localhost:18082. Пароль для нового пользователя webconnuser - `123`, указан в скрипте [start.sh](https://github.com/HappyClickClack/DeviceFarmModules/blob/main/xpra_scrcpy/script/start.sh#L10), пользователь создается в [dockerfile](https://github.com/HappyClickClack/DeviceFarmModules/blob/main/xpra_scrcpy/dockerfile#L43).
   - На порту 18080 должно появиться окно Xterm:<br>
     <img width="532" height="426" alt="image" src="https://github.com/user-attachments/assets/f0b037ad-fe59-447b-b384-9a343ca00e1b" />
 
