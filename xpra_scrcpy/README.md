@@ -24,6 +24,8 @@ chmod -R 700 ./script/
 ```
 - запустите ADB сервер на хосте:
 ```
+adb kill-server
+pkill -9 adb
 adb -a nodaemon server start &> /dev/null &
 ```
 - запустите контейнер с пробросом ADB сервера:
